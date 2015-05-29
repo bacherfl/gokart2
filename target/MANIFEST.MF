@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: gokart2
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: at.bacherfl
+Build-Jdk: 1.8.0_05
+Built-By: florian
+Created-By: IntelliJ IDEA
+Main-Class: gokart2.Gokart2Application
+
