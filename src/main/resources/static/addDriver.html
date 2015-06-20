@@ -1,0 +1,36 @@
+<h1>Add a new Driver</h1>
+
+<!-- FORM -->
+<form ng-submit="createDriver()">
+    <!-- NAME -->
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="firstName" class="form-control" placeholder="first name" ng-model="driverModel.firstName">
+        <span class="help-block"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="lastName" class="form-control" placeholder="last name" ng-model="driverModel.lastName">
+        <span class="help-block"></span>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="form-group">
+        <label>Superhero Alias</label>
+        <input type="text" name="username" class="form-control" placeholder="someone@example.com" ng-model="driverModel.username">
+        <span class="help-block"></span>
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="form-group">
+        <label>Superhero Alias</label>
+        <input type="password" name="password" class="form-control" placeholder="******" ng-model="driverModel.password">
+        <span class="help-block"></span>
+    </div>
+
+    <!-- SUBMIT BUTTON -->
+    <button type="submit" class="btn btn-success btn-lg btn-block">
+        <span class="glyphicon glyphicon-flash"></span> Submit!
+    </button>
+</form>

@@ -1,0 +1,15 @@
+<h1>Drivers</h1>
+
+<div class="list-group">
+    <a href="#" class="list-group-item active" ng-repeat="driver in drivers">
+        <h4 class="list-group-item-heading">{{driver.firstName}} {{driver.lastName}}</h4>
+        <p class="list-group-item-text"></p>
+    </a>
+</div>
+
+<div class="row">
+    <button type="button" class="btn btn-default btn-lg" ng-click="addDriver()">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Driver
+    </button>
+
+</div>

@@ -30,6 +30,7 @@ import java.util.Arrays;
 public class Gokart2Application {
 
     // CORS
+    /*
     @Bean
     FilterRegistrationBean corsFilter(
             @Value("${tagit.origin:http://localhost:9000}") String origin) {
@@ -63,6 +64,7 @@ public class Gokart2Application {
             }
         });
     }
+    */
 
 
     @Bean

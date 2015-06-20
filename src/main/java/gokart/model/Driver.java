@@ -25,8 +25,9 @@ public class Driver {
     private String firstName;
     private String lastName;
 
-    @JsonIgnore
     private String username;
+
+    @JsonIgnore
     private String password;
 
     private String imageUrl;

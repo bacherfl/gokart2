@@ -14,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.Principal;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by florian on 17/01/15.
@@ -110,6 +111,18 @@ public class DriverController {
     @RequestMapping("/user")
     public Principal user(Principal user) {
         return user;
+    }
+
+    @RequestMapping("/drivers/self")
+    public Driver getUserInfo() {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+        Optional<Driver> user = driverRepository.findByUsername(name);
+        if (user != null) {
+            return user.get();
+        } else {
+            return null;
+        }
     }
 
 }
